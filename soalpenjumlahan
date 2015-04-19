@@ -1,0 +1,41 @@
+import java.util.Scanner;
+	public class soalpenjumlahan{
+		public static void main(String[] args){
+		final int Jumlah = 3; 
+		int hitungBenar = 0; 
+		int hitung = 0; 
+		String keluaran = ""; 
+		Scanner sc = new Scanner(System.in);
+
+		while (hitung < Jumlah) 
+		{
+		 int angka1 = (int)(Math.random() * 20);
+		 int angka2 = (int)(Math.random() * 20);
+
+		if (angka1 < angka2) 
+		{
+		 int temp = angka1;
+		 angka1 = angka2;
+		 angka2 = temp;
+		}
+		System.out.print("Masukkan Jumlah Soal: ");
+		int jumlah = sc.nextInt();
+		System.out.print( "Berapakah hasil dari " + angka1 + " + " + angka2 + "? ");
+		int jawab = sc.nextInt();
+
+		if (angka1 + angka2 == jawab) 
+		{
+			System.out.println("Anda benar!");
+			hitungBenar++;
+		}
+		else
+		System.out.println("Jawaban Anda salah.\n" + angka1 + " + " + angka2 + " seharusnya " + (angka1 - angka2));
+
+		hitung++;
+		keluaran += "\n" + angka1 + "+" + angka2 + "=" + jawab +
+		((angka1 - angka2 == jawab) ? " benar" : " salah");
+		}
+
+		System.out.println("Jumlah yang benar adalah " + hitungBenar );
+		}
+	}
