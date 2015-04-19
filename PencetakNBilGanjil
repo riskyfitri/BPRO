@@ -1,0 +1,15 @@
+import java.util.*;
+public class PencetakNBilGanjil{
+	public static void main (String []argv){
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Jumlah Bil Ganjil: ");
+		int i=1;
+		int bilGanjil=1;
+		int n=sc.nextInt ();
+		while(i<=n){
+			System.out.println(bilGanjil);
+			bilGanjil +=2;
+			i++;
+		}
+	}
+}
