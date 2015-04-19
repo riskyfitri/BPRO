@@ -1,0 +1,20 @@
+import java.util.*;
+public class BentukAir{
+{
+	public static void main (String [] argv)
+	{
+		Scanner sc=new Scanner (system.in);
+		System.out.print(" Masukkan temperatur Air (dalam celcius)= ");
+		int tempAir = sc.nextInt();
+		String bentukAir="";
+		if ((tempAir>=-20){
+		{
+			System.out.println ("Padat") ;
+		}
+			(else if ((temp>=0 && (temp <100))) ;
+				System.out.println ("Cair" ) ;
+		}else{
+			System.out.println ("Gas") ;
+		} 
+	}	
+}
