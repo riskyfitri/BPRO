@@ -1,0 +1,19 @@
+import java.util.*;
+public class DoWhileDemo08{
+	public static void main (String []param){
+		boolean selesai=false;
+		Scanner sc=new Scanner(System.in);
+		int angka=0;
+		int total=0;
+	do
+	{
+		System.out.print("Masukkan angka [-1=exit]: ");
+		angka= sc.nextInt();
+		if(angka==-1)
+			selesai=true;
+		else
+		total +=angka;
+	}while(!selesai);
+	System.out.println("TOTAL = "+ total);
+	}
+}
